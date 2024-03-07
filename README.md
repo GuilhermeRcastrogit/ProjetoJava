@@ -39,7 +39,7 @@ Retonar um array com todas as categorias cadastradas.
 
 `GET`/categoria/`{id}`
 
-Retornar os detalhes da categoria com o id informado como parâmetro de path.
+Retornar dados da categoria com o id informado como parâmetro de path.
 
 Exemplo de resposta
 ```

@@ -6,10 +6,6 @@ Ver http status code
 ## TAREFAS
 
 - [ ] CRUD de Categorias
-<<<<<<< HEAD
-
-=======
->>>>>>> 426598526c630c4eaabfd19920b4d99bf0f44a6b
 
 ## Documentação da API
 

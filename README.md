@@ -32,10 +32,23 @@ Retonar um array com todas as categorias cadastradas.
 | Código | Descrição                                          |
 | ------ | -------------------------------------------------- |
 | 200    | Os dados da categorias foram retornado com sucesso |
-| 404    | Endpoint não reconhecido, não validavel o endpoint |
+| 401    | Acesso negado. Você deve se autenticar             |
 | 408    | Erro de status do server                           |
 
 ---
+
+`GET`/categoria/`{id}`
+
+Retornar os detalhes da categoria com o id informado como parâmetro de path.
+
+Exemplo de resposta
+```
+{
+    "id": 1,
+    "nome": "Alimentação",
+    "icone": "fast-food"
+}
+```
 
 ## Cacadastrar Categoria
 
@@ -64,9 +77,12 @@ Cria uma nova categoria com os dados enviados no corpo da requisição
 
 | Código | Descrição                                          |
 | ------ | -------------------------------------------------- |
-| 200    | Os dados da categorias foram enviados com sucesso  |
+| 204    | Categoria foi apagada com sucesso                  |
+| 400    | Dados enviados são inválidos. Verifique o corpo da requisição|
+| 401    | Acesso negado. Você deve se autenticar             |
 | 404    | Endpoint não reconhecido, não validavel o endpoint |
 | 408    | Erro de status do server                           |
+
 ---
 
 `PUT` /categoria/ `{id}`
@@ -99,23 +115,13 @@ Atualiza uma das categorias com o `{id}` do carro.
 
 Deleta uma das categorias com o `{id}` do carro.
 
-## Exemplo de Resposta
-
-```js
-[
-  {
-    id: 1,
-    nome: "Marca do carro",
-    icone: "icone-carro",
-  },
-];
-```
 
 ## Códigos de Status
 
 | Código | Descrição                                          |
 | ------ | -------------------------------------------------- |
-| 200    | Os dados da categorias foram enviados com sucesso  |
+| 204    | Categoria foi apagada com sucesso                  |
+| 401    | Acesso negado. Você deve se autenticar             |
 | 404    | Endpoint não reconhecido, não validavel o endpoint |
 | 408    | Erro de status do server                           |
 

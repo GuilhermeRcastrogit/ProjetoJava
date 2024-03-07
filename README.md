@@ -6,9 +6,7 @@ Ver http status code
 ## TAREFAS
 
 - [ ] CRUD de Categorias
-- [ ] CRUD de Movimentações
-- [ ] CRUD de Úsuarios
-- [ ] Dashboard
+
 
 ## Documentação da API
 
@@ -50,8 +48,8 @@ Cria uma nova categoria com os dados enviados no corpo da requisição
 
 | Campo | tipo   | obrigatório | Descrição                                                  |
 | ----- | ------ | :---------: | ---------------------------------------------------------- |
-| nome  | String |    Sim✅    | um nome curto para a categoria                             |
-| icone | String |    não❌    | um nome do ícone de acordo com a biblioteca Material Icons |
+| nome Carro  | String |    Sim✅    | um nome curto para a categoria                             |
+| icone Carro | String |    não❌    | um nome do ícone de acordo com a biblioteca Material Icons |
 
 ---
 
@@ -67,7 +65,59 @@ Cria uma nova categoria com os dados enviados no corpo da requisição
 
 | Código | Descrição                                          |
 | ------ | -------------------------------------------------- |
-| 201    | Categoria cadastrada com sucesso                   |
+| 200    | Os dados da categorias foram enviados com sucesso  |
 | 404    | Endpoint não reconhecido, não validavel o endpoint |
 | 408    | Erro de status do server                           |
+---
+
+`PUT` /categoria/ `{id}`
+
+Atualiza uma das categorias com o `{id}` do carro.
+
+## Exemplo de Resposta
+
+```js
+[
+  {
+    id: 1,
+    nome: "Marca do carro",
+    icone: "icone-carro",
+  },
+];
+```
+
+## Códigos de Status
+
+| Código | Descrição                                          |
+| ------ | -------------------------------------------------- |
+| 200    | Os dados da categorias foram enviados com sucesso  |
+| 404    | Endpoint não reconhecido, não validavel o endpoint |
+| 408    | Erro de status do server                           |
+
+---
+
+`DELETE` /categoria/ `{id}`
+
+Deleta uma das categorias com o `{id}` do carro.
+
+## Exemplo de Resposta
+
+```js
+[
+  {
+    id: 1,
+    nome: "Marca do carro",
+    icone: "icone-carro",
+  },
+];
+```
+
+## Códigos de Status
+
+| Código | Descrição                                          |
+| ------ | -------------------------------------------------- |
+| 200    | Os dados da categorias foram enviados com sucesso  |
+| 404    | Endpoint não reconhecido, não validavel o endpoint |
+| 408    | Erro de status do server                           |
+
 ---

@@ -6,9 +6,6 @@ Ver http status code
 ## TAREFAS
 
 - [ ] CRUD de Categorias
-- [ ] CRUD de Movimentações
-- [ ] CRUD de Úsuarios
-- [ ] Dashboard
 
 ## Documentação da API
 
